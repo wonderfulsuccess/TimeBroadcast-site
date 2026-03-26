@@ -1,54 +1,134 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>时间播报助手</title>
-  <meta name="description" content="时间播报助手是一款轻量时间提醒 App，可在指定时间段内重复播报当前时间与自定义提醒内容。">
+  <title>Time Broadcast Assistant</title>
+  <meta name="description" content="Time Broadcast Assistant is a lightweight iPhone and iPad app that speaks the time and your custom reminder on the schedule you choose.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="page">
-    <section class="hero">
-      <p class="eyebrow">TimeBroadcast</p>
-      <h1>时间播报助手</h1>
-      <p class="lead">在固定时间段内，用更清晰的语音播报帮你建立节奏。适合学习、工作、出门准备和家庭作息等场景。</p>
-      <div class="actions">
-        <a class="button primary" href="support.html">支持与帮助</a>
-        <a class="button" href="privacy.html">隐私政策</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">TB</span>
+        <span class="brand-copy">
+          <strong>Time Broadcast Assistant</strong>
+          <span>Spoken schedule reminders for iPhone and iPad</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="kicker">iPhone and iPad</p>
+          <h1>Spoken reminders that keep your day on rhythm.</h1>
+          <p class="hero-lead">
+            Set a time window, choose an interval, and hear the time together with your own words.
+            Time Broadcast Assistant is built for study sessions, focused work, breaks, getting ready
+            to leave, and everyday routines.
+          </p>
+
+          <div class="pill-row">
+            <span class="pill">iOS / iPadOS 18+</span>
+            <span class="pill">No account</span>
+            <span class="pill">No tracking</span>
+            <span class="pill">No network required</span>
+          </div>
+
+          <div class="actions">
+            <a class="button primary" href="support.html">Get Support</a>
+            <a class="button secondary" href="privacy.html">Read Privacy Policy</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="panel-card">
+            <p class="eyebrow">At a glance</p>
+            <h2>One schedule, clear status, next announcement.</h2>
+            <ul class="stack-list">
+              <li>See the current time, plan state, and next spoken reminder on one dashboard.</li>
+              <li>Adjust start time, end time, interval, repeat mode, and announcement text in seconds.</li>
+              <li>Use the <code>{time}</code> placeholder to blend the live time into your spoken prompt.</li>
+            </ul>
+          </div>
+
+          <div class="mini-grid">
+            <article class="mini-card">
+              <p>Foreground</p>
+              <strong>Direct spoken reminders</strong>
+            </article>
+            <article class="mini-card">
+              <p>Lock Screen</p>
+              <strong>Local notifications and stop action</strong>
+            </article>
+            <article class="mini-card">
+              <p>Privacy</p>
+              <strong>Schedule data stays on device</strong>
+            </article>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="kicker">Core Features</p>
+          <h2>Built to be simple, predictable, and easy to trust.</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="card">
+            <h3>Shape the time window</h3>
+            <p>Pick a start time, end time, and repeat interval that match the flow of your day.</p>
+          </article>
+          <article class="card">
+            <h3>Write your own prompt</h3>
+            <p>Combine the current time with a short instruction so each announcement fits the moment.</p>
+          </article>
+          <article class="card">
+            <h3>Keep the rhythm visible</h3>
+            <p>Check plan status, next announcement, and current content without digging through menus.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-grid">
+        <article class="card card-large">
+          <p class="eyebrow">How It Works</p>
+          <h2>Designed for repeatable, spoken checkpoints.</h2>
+          <ul class="detail-list">
+            <li>Announcements in the foreground use the system voice directly.</li>
+            <li>When background announcements are enabled, the app keeps an active audio session so scheduled speech can continue after you minimize the app or lock the device.</li>
+            <li>If you force-quit the app from the app switcher, background spoken announcements stop and only the local notification remains.</li>
+            <li>Background announcements can increase battery usage.</li>
+          </ul>
+        </article>
+
+        <article class="card card-large">
+          <p class="eyebrow">Privacy By Default</p>
+          <h2>No account, no ads, no third-party tracking.</h2>
+          <ul class="detail-list">
+            <li>Schedule settings and temporary generated audio are stored only on your device.</li>
+            <li>The app does not require a login, cloud sync, subscription, or remote service.</li>
+            <li>Notifications are requested only when lock-screen reminder behavior is needed.</li>
+            <li>The current version does not collect data for analytics, advertising, or profiling.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Time Broadcast Assistant</p>
+      <div class="footer-links">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
       </div>
-    </section>
-
-    <section class="card-grid">
-      <article class="card">
-        <h2>核心能力</h2>
-        <ul>
-          <li>自定义开始时间、结束时间和播报间隔</li>
-          <li>支持自定义播报文案与 <code>{time}</code> 占位符</li>
-          <li>前台语音播报，锁屏后通过本地通知继续提醒</li>
-          <li>无需登录，不依赖网络</li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <h2>适用场景</h2>
-        <ul>
-          <li>学习专注提醒</li>
-          <li>会议与休息节奏提醒</li>
-          <li>出门前准备流程</li>
-          <li>家庭作息与时间感训练</li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <h2>产品原则</h2>
-        <ul>
-          <li>本地优先，不收集不必要数据</li>
-          <li>无广告、无第三方跟踪、无订阅</li>
-          <li>以简单、稳定、可长期使用为目标</li>
-        </ul>
-      </article>
-    </section>
-  </main>
+    </footer>
+  </div>
 </body>
 </html>

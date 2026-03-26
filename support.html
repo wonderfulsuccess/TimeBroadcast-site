@@ -1,38 +1,126 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>支持与帮助 - 时间播报助手</title>
-  <meta name="description" content="时间播报助手支持与帮助页面。">
+  <title>Support - Time Broadcast Assistant</title>
+  <meta name="description" content="Support information for Time Broadcast Assistant.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="page policy">
-    <a class="back-link" href="index.html">返回首页</a>
-    <h1>支持与帮助</h1>
-    <p class="muted">如果你在使用时间播报助手时遇到问题，可以先查看下面的常见说明。</p>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">TB</span>
+        <span class="brand-copy">
+          <strong>Time Broadcast Assistant</strong>
+          <span>Spoken schedule reminders for iPhone and iPad</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a aria-current="page" href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
 
-    <section class="policy-section">
-      <h2>常见问题</h2>
-      <h3>为什么锁屏后没有继续播报？</h3>
-      <p>请确认你已经在 App 内开启通知，并在系统设置中允许通知显示和声音播放。锁屏或后台场景依赖本地通知完成提醒。</p>
+    <main class="content-page">
+      <a class="back-link" href="index.html">Back to Home</a>
 
-      <h3>为什么今天没有继续播报？</h3>
-      <p>如果计划设置为“仅今天”，超过结束时间后当天计划会自动结束。你可以改为“每天重复”，或者重新启用计划。</p>
+      <section class="section page-hero">
+        <p class="kicker">Support</p>
+        <h1>Help, contact details, and common answers.</h1>
+        <p class="page-lead">
+          Use this page as the public support destination for App Store Connect. Replace the bracketed
+          placeholders below with your own public contact details before submission.
+        </p>
+      </section>
 
-      <h3>为什么播报内容和我输入的不一样？</h3>
-      <p>如果播报文案为空，应用会使用默认模板“现在是 {time}”。你也可以在文案中加入 <code>{time}</code>，让提醒自动带上当前时间。</p>
-    </section>
+      <section class="notice-card">
+        <p class="notice-title">Before App Store submission</p>
+        <p class="notice-copy">
+          Apple expects the support page to point to real contact information. Update the email,
+          phone, and mailing address placeholders below with your public support details.
+        </p>
+      </section>
 
-    <section class="policy-section">
-      <h2>反馈方式</h2>
-      <p>当前公开支持渠道：</p>
-      <ul>
-        <li><a href="https://github.com/wonderfulsuccess/TimeBroadcast/issues">GitHub Issues</a></li>
-        <li><a href="https://github.com/wonderfulsuccess/TimeBroadcast">项目仓库</a></li>
-      </ul>
-    </section>
-  </main>
+      <section class="info-grid">
+        <article class="card">
+          <p class="eyebrow">Public Contact</p>
+          <h2>Support details</h2>
+          <dl class="contact-list">
+            <div>
+              <dt>Support email</dt>
+              <dd class="placeholder">[Add your public support email before submission]</dd>
+            </div>
+            <div>
+              <dt>Support phone</dt>
+              <dd class="placeholder">[Add if required in your region]</dd>
+            </div>
+            <div>
+              <dt>Mailing address</dt>
+              <dd class="placeholder">[Add your public mailing address if required in your region]</dd>
+            </div>
+            <div>
+              <dt>Community support</dt>
+              <dd><a href="https://github.com/wonderfulsuccess/TimeBroadcast/issues">GitHub Issues</a></dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="card">
+          <p class="eyebrow">Release Basics</p>
+          <h2>Current app scope</h2>
+          <ul class="detail-list">
+            <li>Works on iPhone and iPad with iOS / iPadOS 18 or later.</li>
+            <li>No account, subscription, or in-app purchase is required.</li>
+            <li>No ads, analytics SDKs, or external content feeds are included.</li>
+            <li>Schedule data stays on the device unless you choose to share something manually through a support channel.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="faq-grid">
+        <article class="card">
+          <h2>Why do announcements stop after I force-quit the app?</h2>
+          <p>
+            Background spoken announcements require the app to remain running. If you swipe the app
+            away from the app switcher, background speech stops and only the local notification remains.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Why does the app ask for notifications?</h2>
+          <p>
+            Notification permission is used for lock-screen reminder delivery and the stop action.
+            Without it, the app can still speak in the foreground, but lock-screen alerts are limited.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Why can battery usage increase?</h2>
+          <p>
+            When background announcements are enabled, the app keeps an active audio session so it can
+            continue scheduled speech after you minimize the app or lock the device.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>How do I include the current time in the reminder?</h2>
+          <p>
+            Add <code>{time}</code> to your announcement template. The app replaces it with the current
+            time whenever the reminder is spoken.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Time Broadcast Assistant</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
